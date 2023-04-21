@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste com a Position Relative</title>
+    <style>
+      
+      div{
+        box-sizing: border-box;
+      }
+
+      .pai {
+        width: 500px;
+        height: 500px;
+        background-color: rgba(9, 182, 26, 0.3);
+        border: 3px dotted rgb(112, 147, 218);
+        margin: 20px;
+        position: static;
+        /*Está no verde*/
+        color: blueviolet;
+        font-size: 20px;
+        margin: auto;
+      }
+
+      .filho {
+        width: 100px;
+        height: 100px;
+        background-color: rgba(255, 4, 222, 0.39);
+        border: 3px dotted rgb(112, 147, 218);
+        margin: 5px;
+        color: azure;
+      }
+
+      .relative{
+        position: relative;
+        background-color: cadetblue;
+      }
+      .posicao {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .inicio{
+        position: initial;
+        background-color: rgb(0, 0, 0);
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="pai">
+      <div class="filho inicio">
+        <span>Fixo</span>
+      </div>
+      <div class="filho relative posicao">
+        <span>Relative</span>
+      </div>
+      <span>Static</span>
+  </body>
+</html>
