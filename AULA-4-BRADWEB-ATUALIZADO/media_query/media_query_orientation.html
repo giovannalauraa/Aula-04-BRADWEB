@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Max</title>
+    <style>
+        .container{
+            /* width: 500px;
+            height: 200px; */
+            background-color: rgba(75, 9, 38, 0.747);
+            border: 3px dotted rgba(59, 3, 78, 0.411);
+            margin: 20px auto;
+            /*propriedade flex*/
+            display: flex;
+            align-items: center; /*alinha o eixo horizontal*/
+            justify-content: center; /*alinha o eixo vertical*/
+        }
+
+        .item{
+            width: 100px;
+            height: 100px;
+            /*margin: top/bottom rigth/left*/
+            margin: 5px 10px;/*distância entre os itens em colunas*/
+            background-color: rgb(218, 217, 217);
+            position: relative;
+        }
+
+        .label{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /*Viewport deve estar na disposição landscape*/
+        @media screen and(orientation:landscape){
+            .container{
+                flex-direction: row;
+            }
+        }
+
+        /*Viewport deve estar na disposição portrait*/
+        @media(orientation:portrait){
+            .container{
+                flex-direction: column;
+            }
+            .item{
+                background-color: rgba(223, 157, 172, 0.831);
+                border-radius: 5%;
+                box-shadow: 60px 2px rgba(87, 89, 89, 0.33);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+     <!-- (div.item>span.item)*4 -->
+     <div class="item"><span class="label">
+        Item 1
+</span>
+    </div>
+     <div class="item"><span class="label">
+        Item 2
+     </span>
+    </div>
+     <div class="item"><span class="label">
+        Item 3
+     </span>
+    </div>
+     <div class="item"><span class="label">
+        Item 4
+     </span>
+    </div>
+    </div>
+</body>
+</html>

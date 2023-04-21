@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Max</title>
+    <style>
+        .container{
+            width: 500px;
+            height: 500px;
+            background-color: rgba(87, 7, 42, 0.719);
+            border: 3px dotted rgba(59, 3, 78, 0.411);
+            margin: 20px auto;
+        }
+
+        /*Viewport deve ter até no máximo 400px*/
+        @media(max-width: 400px){
+            .container{
+                background-color: rgba(172, 255, 47, 0.356) !important;    
+            }
+        }
+
+        /*Viewport deve ter até no máximo 700px*/
+        @media(max-width: 700px){
+            .container{
+                background-color: blue;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+</body>
+</html>
