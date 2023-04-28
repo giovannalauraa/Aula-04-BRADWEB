@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #000000;
+}
+
+.hero{
+    width: 88.9%;
+    /* Técnica para centralizar
+     elementos em bloco no centro*/
+    margin: 0 auto;
+    text-align: center;
+    height: max-content;
+}
+
+.header_pc{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+    margin-bottom: 99px;
+    font-size: 15px;
+}
+
+.header_mobile{
+   display: none;
+}
+
+.menu{
+    display: flex; 
+    justify-content: space-between;
+    width: 488px;
+    font-family: 'Lato', sans-serif;
+    color: #FFFFFF;
+    margin: 0 20px;
+}
+
+.login{
+    display: flex;
+    align-items: center;
+}
+
+.login a{
+    font-family: 'Lato', sans-serif;
+    color: #FFFFFF;
+    text-decoration: none ;
+}
+
+.register_button{
+    box-sizing: border-box;
+    width: 129px;
+    height: 42px;
+    margin-left: 40px;
+    border-radius: 40px;
+    background-color: #FFFFFF;
+    /*!important sobrescreve não deixando a
+    primeira cor atribuida sobresair*/
+    color: #000000 !important;
+    display: grid;
+    place-content: center;
+}
+
+.menu a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/*criando um menu "fake" com
+  espaçamentos entre  divs*/
+.menu div{
+    border: 1.5px solid #FFFFFF;
+}
+
+/*Escondendo a seta para mobile*/
+.get_started .up_indicator{
+    display: none;
+}
+
+.button{
+    /*inline-block para definir altura 
+      e comprimento*/
+    display: inline-block;
+    width: 135px;
+    height: 44px;
+
+    padding: 12px 0;
+    background-color: #A8FF35;
+    font-family: 'Amaranth', sans-serif;
+    /*Distância das linhas*/
+    line-height: 100%;
+    border-radius: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.social_medias{
+    margin: 0 35px;
+    margin-bottom: 43px;
+    box-sizing: border-box;
+    max-height: 308px;
+    display: flex;
+}
+
+.social_medias div{
+    /*cada div terá o comprimento 
+    do seu pai com uma posição relativa*/
+    width: inherit;
+    position: relative;
+}
+
+.social_medias img{
+    max-width: 160%;
+}
+
+.social_medias div:nth-child(1){
+    transform: rotate(-10deg);
+    z-index: 4;
+}
+.social_medias div:nth-child(2){
+    transform: rotate(3deg);
+    top: 20px;
+    z-index: 3;
+}
+.social_medias div:nth-child(3){
+    transform: rotate(-4deg);
+    top: -10px;
+    z-index: 2;
+}
+.social_medias div:nth-child(4){
+    transform: rotate(5deg);
+    top: 40px;
+    left: -13%;
+    z-index: 1;
+}
+
+/*Parte das brands*/
+.brands{
+    background-color: #FAFAFA;
+    text-align: center;
+}
+
+.brands h1{
+    color: #000000;
+    position: relative;
+    padding-top: 80px;
+    margin-bottom: 32px;
+    font-family: 'Lato', sans-serif;
+}
+
+.brands_grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 14px;
+    padding-bottom: 80px;
+    margin: 0 18px;
+}
+
+.brands_grid div{
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 25px 0;
+    display: grid;
+    place-content: center;
+}
+
+.title{
+    color: #FFFFFF;
+    font-size: 78px;
+    line-height: 112%;
+    /* Fonte utilizada no lugar de Effra */
+    font-family: 'Lato', sans-serif;
+}
+
+.subtitle{
+    color: #8B8B8B;
+    font-size: 14px;
+    line-height: 150%;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-top: 16px;
+    /*Fonte utilizada no lugar de Effra*/
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 32px;
+}
+
+/* New Tab  Part*/
+.new_tab{
+    background-color: #A8FF35;
+    height: max-content;
+    text-align: center;
+}
+
+.new_tab > h1 {
+    color: #000000;
+    position: relative;
+    padding-top: 80px;
+    margin-bottom: 32px;
+} 
+
+.content_new_tab{
+    width: 339px;
+    margin: 0 auto;
+    margin-bottom: 34px;
+}
+
+.solution-example{
+    width: inherit;
+    display: block;
+    border: 25px solid #FFFFFF;
+    border-radius: 14px;
+    box-sizing: border-box;
+}
+
+.up_indicator{
+    display: block;
+    width: fit-content;
+    /* Fonte utilizada no lugar de GoodDog New */
+    font-family: 'Chilanka', cursive; 
+    position: relative;
+    margin-left: auto;
+}
+
+.up_indicator span{
+    display: block;
+    font-size: 8pt;
+    font-weight: bold;
+    width: 93px;
+    transform: rotate(10deg);
+    position: relative;
+    top: 20px;
+    right: 25px;
+}
+
+.up_indicator img{
+    top: 20px;
+    right: 50px;
+    position: relative;
+    transform: rotateY(180deg);
+}
+
+.bottom_indicator{
+    display: block;
+    width: fit-content;
+    /* Fonte utilizada no lugar de GoodDog New */
+    font-family: 'Chilanka', cursive;
+    position: relative;
+}
+
+.bottom_indicator span{
+    display: block;
+    font-size: 8pt;
+    font-weight: bold;
+    width: 93px;
+    transform: rotate(5deg);
+    position: relative;
+    top: 30px;
+}
+
+.bottom_indicator img{
+    position: relative;
+    transform: rotate(-120deg);
+    bottom: 40px;
+}
+
+.new_tab > p {
+    line-height: 150%;
+    font-size: 13px;
+    padding-bottom: 80px;
+    /* Fonte utilizada no lugar de Effra */
+    font-family: 'Lato', sans-serif;
+    width: 286px;
+    margin: 0 auto;
+}
+
+/* Footer CSS */
+.footer{
+    background-color: #FFFFFF;
+    /*completar o espaço que sobrou do background*/
+    height: 100vh;
+}
+
+.footer img{
+    display: block;
+    margin: 0 auto;
+    padding-top: 80px;
+    background-color: #FFFFFF;
+    margin-bottom: 80px;
+}
+
+.map_links{
+    height: 192px;
+    margin-bottom: 80px;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.map_links a{
+    text-decoration: none;
+    color:#000000;
+}
+

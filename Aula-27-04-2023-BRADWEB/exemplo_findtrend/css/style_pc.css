@@ -1,0 +1,327 @@
+*{
+    margin: 0px;
+}
+
+/* General Style */
+
+body{
+    background-color: #000000;
+}
+
+.container{
+    
+}
+
+/* Hero style */
+.hero{
+    width: 88.9%;
+    margin: 0 auto;
+    text-align: center;
+    height: max-content;
+}
+
+.header_mobile{
+    display: none;
+ }
+ 
+.header_pc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+    margin-bottom: 99px;
+    font-size: 15px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    width: 488px;
+    font-family: 'Lato', sans-serif;
+    color: #FFFFFF;
+    margin: 0 20px;
+}
+
+.menu a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.login{
+    display: flex;
+    align-items: center;
+}
+
+
+.login a{
+    font-family: 'Lato', sans-serif;
+    color: #FFFFFF;    
+    text-decoration: none;
+}
+
+.register_button{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 129px;
+    height: 42px;
+    margin-left: 40px;
+    border-radius: 40px;
+    background-color: #FFFFFF;
+    color: #000000 !important;
+    display: grid;
+    place-content: center;
+}
+
+.title{
+    color: #FFFFFF;
+    font-size: 72px;
+    line-height: 112%;
+    /* Fonte utilizada no lugar de Effra */
+    font-family: 'Lato', sans-serif;
+}
+
+.subtitle{
+    color: #8B8B8B;
+    font-size: 18px;
+    line-height: 150%;
+    display: block;
+    width: 666px;
+    margin: 0 auto;
+    /* Fonte utilizada no lugar de Effra */
+    font-family: 'Lato', sans-serif;
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+
+.get_started {
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 94px;
+}
+
+.get_started .up_indicator span{
+    display: relative;
+    left: 110px;
+    top: 40px;
+    color: #FFFFFF;
+}
+
+.get_started .up_indicator img{
+    display: relative;
+    left: 80px;
+    top: 40px;
+    transform: rotate(90deg) !important;
+}
+
+.get_started .button{
+    padding: 12px 0;
+    background-color: #A8FF35;
+    width: 135px;
+    height: 44px;
+    font-family: 'Amaranth', sans-serif;
+    line-height: 100%;
+    border-radius: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 60px;
+}
+
+
+.social_medias{
+    display: flex;
+    box-sizing: border-box;
+    max-width: 75%;
+    margin: 0 auto;
+    margin-bottom: 90px;
+
+}
+
+.social_medias div{
+    /* Necessário para configurar flex shrink e grow, e o tamanho base  */
+    flex: 1 1 auto; 
+    position: relative;
+
+}
+
+.social_medias img{
+    max-width: 160%;
+}
+
+
+.social_medias div:nth-child(1){
+    transform: rotate(-10deg);
+    z-index: 4;
+}
+
+.social_medias div:nth-child(2){
+    transform: rotate(3deg);
+    top:20px;
+    z-index: 3;
+
+}
+
+.social_medias div:nth-child(3){
+    transform: rotate(-4deg);
+    top: -10px;
+    z-index: 2;
+
+}
+
+.social_medias div:nth-child(4){
+    transform: rotate(5deg);
+    top: 40px;
+    left: -13%; /*?????*/
+    z-index: 1;
+}
+
+/* New Tab Part*/
+.new_tab{
+    background-color: #A8FF35;
+    height: max-content;
+    text-align: center;
+}
+
+.new_tab > h1 {
+    color: #000000;
+    position: relative;
+    padding-top: 140px;
+    margin-bottom: 60px;
+} 
+
+.content_new_tab{
+    width: 339px;
+    margin: 0 auto;
+    margin-bottom: 34px;
+}
+
+.solution-example{
+    width: inherit;
+    display: block;
+    border: 25px solid #FFFFFF;
+    border-radius: 14px;
+    box-sizing: border-box;
+}
+
+.up_indicator{
+    display: block;
+    width: fit-content;
+    /* Fonte utilizada no lugar de GoodDog New */
+    font-family: 'Chilanka', cursive; 
+    position: relative;
+    margin-left: auto;
+}
+
+.up_indicator span{
+    display: block;
+    font-size: 8pt;
+    font-weight: bold;
+    width: 93px;
+    transform: rotate(10deg);
+    position: relative;
+    top: 20px;
+    right: 25px;
+}
+
+.up_indicator img{
+    top: 20px;
+    right: 50px;
+    position: relative;
+    transform: rotateY(180deg);
+}
+
+.bottom_indicator{
+    display: block;
+    width: fit-content;
+    /* Fonte utilizada no lugar de GoodDog New */
+    font-family: 'Chilanka', cursive;
+    position: relative;
+}
+
+.bottom_indicator span{
+    display: block;
+    font-size: 8pt;
+    font-weight: bold;
+    width: 93px;
+    transform: rotate(5deg);
+    position: relative;
+    top: 30px;
+}
+
+.bottom_indicator img{
+    position: relative;
+    transform: rotate(-120deg);
+    bottom: 40px;
+}
+
+.new_tab > p {
+    line-height: 150%;
+    font-size: 18px;
+    padding-bottom: 140px;
+    /* Fonte utilizada no lugar de Effra */
+    font-family: 'Lato', sans-serif;
+    width: 666px;
+    margin: 0 auto;
+}
+
+/* Brands Part*/
+.brands{
+    background-color: #FAFAFA;
+    text-align: center;
+}
+
+.brands h1{
+    color: #000000;
+    position: relative;
+    padding-top: 80px;
+    margin-bottom: 32px;
+    font-family: 'Lato', sans-serif;
+}
+
+.brands_grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 14px;
+    padding-bottom: 140px;
+    margin: 0 140px;
+}
+
+.brands_grid div{
+    /* 266 e 115 */
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 25px 0;
+    display: grid;
+    place-content: center;
+}
+
+/* Footer CSS */
+.footer{
+    display: flex;
+    height: max-content;
+    width: 100%;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+}
+
+.footer img{
+    display: block;
+    margin-left: 80px;
+    padding: 30px 0;
+}
+
+.map_links{
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.map_links a{
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    color: #000000;
+}

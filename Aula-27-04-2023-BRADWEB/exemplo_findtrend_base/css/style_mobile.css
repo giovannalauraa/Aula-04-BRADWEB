@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #000000;
+}
+
+.hero{
+    text-align: center;
+}
+
+.header_pc{ /*Escondendo o header_pc*/
+    display: none;
+}
+
+.header_mobile{
+    position: relative;
+    /*padding top: 24 pd-bottom: 24px pd-left e right: 0 */
+    padding: 24px 0;
+    margin-bottom: 56px;
+    /*Procura deixar o elemento 
+    do tamanho especificado independente
+    do tamanho de outros itens*/
+    box-sizing: border-box;
+}
+
+.icon{
+    /*Posição absoluta em relação ao pai
+    herdou o padding: 24px 0; do pai 
+    (distância de cima)*/
+    position: absolute;
+    /* top , right, bottom, left*/
+    left: 18px;
+}
+
+.menu{
+    /* background-color: rgb(54, 255, 4); */
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 18px;
+    /*Usadas para posicionar 
+    as linhas do menu*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;    
+}
+
+/*criando um menu "fake" com
+  espaçamentos entre  divs*/
+.menu div{
+    border: 1.5px solid #FFFFFF;
+}
+
+/*Escondendo a seta para mobile*/
+.get_started .up_indicator{
+    display: none;
+}
+
+.button{
+    /*inline-block para definir altura 
+      e comprimento*/
+    display: inline-block;
+    width: 135px;
+    height: 44px;
+
+    padding: 12px 0;
+    background-color: #A8FF35;
+    font-family: 'Amaranth', sans-serif;
+    /*Distância das linhas*/
+    line-height: 100%;
+    border-radius: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.social_medias{
+    margin: 0 35px;
+    margin-bottom: 43px;
+    padding-bottom: 43px;
+    box-sizing: border-box;
+    max-height: 308px;
+}
+
+.social_medias div{
+    /*cada div terá o comprimento 
+    do seu pai com uma posição relativa*/
+    width: inherit;
+    position: relative;
+}
+
+.social_medias img{
+    /*A imagem terá o máximo 
+    do tamanho do seu pai
+    (não ultrapassa a tela)*/
+    max-width: 100%;
+}
+
+/*Alterando a posição das divs em graus*/
+.social_medias div:nth-child(1){
+    /*negativo sentido anti-horário*/
+    transform: rotate(-5deg);
+    /*Quanto maior o z-index 
+      mais ele ficará acima*/
+    z-index: 4;
+}
+.social_medias div:nth-child(2){
+    transform: rotate(3deg);
+    top: -20px;
+    z-index: 3;
+}
+.social_medias div:nth-child(3){
+    transform: rotate(-4deg);
+    top: -50px;
+    z-index: 2;
+}
+.social_medias div:nth-child(4){
+    transform: rotate(5deg);
+    top: -70px;
+    z-index: 1;
+}
+
+/*Parte das Marcas*/
+.brands{
+    background-color: #FAFAFA;
+    text-align: center;
+}
+
+.brands h1{
+    color: #000000;
+    position: relative;
+    padding-top: 80px;
+    margin-bottom: 32px;
+    font-family: 'Lato', sans-serif;
+}
+
+.brands_grid{
+    display: grid;
+    /*define 2 colunas
+    1fr: da o espaço que 
+    sobra para cada linha*/
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 14px;
+    padding-bottom: 80px;
+    margin: 0 18px;
+}
+
+.brands_grid div{
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 25px 0;
+    display: grid;
+    place-content: center;
+}
+
+.title{
+    color: #FFFFFF;
+    font-size: 36px;
+    line-height: 112%;
+    /* Fonte utilizada no lugar de Effra */
+    font-family: 'Lato', sans-serif;
+}
+
+.subtitle{
+    color: #8B8B8B;
+    font-size: 14px;
+    line-height: 150%;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-top: 16px;
+    /*Fonte utilizada no lugar de Effra*/
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 32px;
+}
+
+/* New Tab  Part*/
+.new_tab{
+    background-color: #A8FF35;
+    height: max-content;
+    text-align: center;
+}
+
+.new_tab > h1 {
+    color: #000000;
+    position: relative;
+    padding-top: 80px;
+    margin-bottom: 32px;
+} 
+
+.content_new_tab{
+    width: 339px;
+    margin: 0 auto;
+    margin-bottom: 34px;
+}
+
+.solution-example{
+    width: inherit;
+    display: block;
+    border: 25px solid #FFFFFF;
+    border-radius: 14px;
+    box-sizing: border-box;
+}
+
+.up_indicator{
+    display: block;
+    width: fit-content;
+    /* Fonte utilizada no lugar de GoodDog New */
+    font-family: 'Chilanka', cursive; 
+    position: relative;
+    margin-left: auto;
+}
+
+.up_indicator span{
+    display: block;
+    font-size: 8pt;
+    font-weight: bold;
+    width: 93px;
+    transform: rotate(10deg);
+    position: relative;
+    top: 20px;
+    right: 25px;
+}
+
+.up_indicator img{
+    top: 20px;
+    right: 50px;
+    position: relative;
+    transform: rotateY(180deg);
+}
+
+.bottom_indicator{
+    display: block;
+    width: fit-content;
+    /* Fonte utilizada no lugar de GoodDog New */
+    font-family: 'Chilanka', cursive;
+    position: relative;
+}
+
+.bottom_indicator span{
+    display: block;
+    font-size: 8pt;
+    font-weight: bold;
+    width: 93px;
+    transform: rotate(5deg);
+    position: relative;
+    top: 30px;
+}
+
+.bottom_indicator img{
+    position: relative;
+    transform: rotate(-120deg);
+    bottom: 40px;
+}
+
+.new_tab > p {
+    line-height: 150%;
+    font-size: 13px;
+    padding-bottom: 80px;
+    /* Fonte utilizada no lugar de Effra */
+    font-family: 'Lato', sans-serif;
+    width: 286px;
+    margin: 0 auto;
+}
+
+/* Footer CSS */
+.footer{
+    background-color: #FFFFFF;
+    /*completar o espaço que sobrou do background*/
+    height: 100vh;
+}
+
+.footer img{
+    display: block;
+    margin: 0 auto;
+    padding-top: 80px;
+    background-color: #FFFFFF;
+    margin-bottom: 80px;
+}
+
+.map_links{
+    height: 192px;
+    margin-bottom: 80px;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.map_links a{
+    text-decoration: none;
+    color:#000000;
+}
+
+
+
